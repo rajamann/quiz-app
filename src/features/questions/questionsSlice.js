@@ -75,7 +75,9 @@ const initialState = {
       correct: false
     }
   ],
-  currentQuestion: 0
+  currentQuestion: 0,
+  numberOfCorrectAnswers: 0,
+  numberOfAttemptedQuestions: 0
 };
 
 export const questionsSlice = createSlice({
@@ -84,10 +86,16 @@ export const questionsSlice = createSlice({
   reducers: {
     setCurrentQuestion: (state) => {
       state.currentQuestion += 1
+    },
+    setNumberOfCorrectAnswers: (state, action) => {
+      state.numberOfCorrectAnswers += action?.payload
+    },
+    setNumberOfAttemptedQuestions: (state, action) => {
+      state.numberOfAttemptedQuestions += action?.payload
     }
   }
 })
 
-export const { setCurrentQuestion } = questionsSlice.actions
+export const { setCurrentQuestion, setNumberOfCorrectAnswers, setNumberOfAttemptedQuestions } = questionsSlice.actions
 
 export default questionsSlice.reducer
