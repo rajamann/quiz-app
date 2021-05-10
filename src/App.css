@@ -1,20 +1,19 @@
 .app-container {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+    justify-items: center;
     background-color: #182C61;
+    height: 100vh;
 }
 
 .quiz-container {
-    height: 400px;
-    width: 800px;
+    max-width: 1020px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
     border: 2px solid white;
     border-radius: 10px;
+    max-height: 600px;
 }

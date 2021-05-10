@@ -3,8 +3,12 @@ import React from 'react'
 import './answer.css'
 
 const Answer = ({answer}) => {
+
+    const handleAnswerClick = (e) => {
+    }
+
     return (
-        <div className='answer'>
+        <div onClick={handleAnswerClick} className='answer'>
             {answer}
         </div>
     )
