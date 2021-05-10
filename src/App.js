@@ -1,21 +1,17 @@
-import React, { useEffect } from 'react';
-import './App.css';
+import React from 'react'
+import './App.css'
 
-import Question from './components/question/Question'
-import Answers from './components/answers/Answers'
+import Quiz from './components/quiz/Quiz'
 
 function App() {
 
   return (
     <div className='app-container'>
       <div className='quiz-container'>
-        <div className='question-container'>
-          <Question />
-        </div>
-        <Answers />
+        <Quiz />
       </div>
     </div>
   )
 }
 
-export default App;
+export default App

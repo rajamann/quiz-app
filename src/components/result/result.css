@@ -1,0 +1,26 @@
+.result {
+    color: white;
+    font-size: 2rem;
+    margin: 2rem;
+}
+
+.correct-answers, .incorrect-answers {
+    padding: 2rem;
+    text-align: center;
+}
+
+.restart {
+    margin: 0 auto;
+    display: block;
+    font-size: 1.5rem;
+    color: #182C61;
+    cursor: pointer;
+    border: none;
+    border-radius: 2px;
+    padding: 1rem;
+    background-color: #fbc531;
+}
+
+.restart:hover {
+    background-color: white;
+}
