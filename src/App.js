@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
 
 import Question from './components/question/Question'
 import Answers from './components/answers/Answers'
 
 function App() {
+
   return (
     <div className='app-container'>
       <div className='quiz-container'>
