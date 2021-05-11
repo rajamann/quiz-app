@@ -1,9 +1,6 @@
 .question {
     color: white;
-    margin-top: 10rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    margin-bottom: 2rem;
+    margin: 2rem;
 }
 
 .question h1 {
@@ -12,6 +9,6 @@
 
 @media only screen and (max-width: 600px) {
     .question {
-      margin-top: 2rem;
+      margin-top: 0.5rem;
     }
 }

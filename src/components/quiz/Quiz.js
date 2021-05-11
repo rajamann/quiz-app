@@ -1,6 +1,7 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 
+import Stats from '../stats/Stats'
 import Question from '../question/Question'
 import Answers from '../answers/Answers'
 import Result from '../result/Result'
@@ -9,14 +10,21 @@ const Quiz = () => {
 
     const { isQuizCompleted } = useSelector(state => state.questions)
 
-    return (
-        !isQuizCompleted ?
+    const renderQuiz = () => (
         <>
-            <div className='question-container'>
-                <Question />
-            </div>
+            <Stats />
+            <Question />
             <Answers />
-        </> : <Result />
+        </>
+    )
+
+    const renderResult = () => <Result />
+
+    return(
+        <>
+        {!isQuizCompleted && renderQuiz()}
+        {isQuizCompleted && renderResult()}
+        </>
     )
 }
 
