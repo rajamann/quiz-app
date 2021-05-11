@@ -24,3 +24,10 @@
 .restart:hover {
     background-color: white;
 }
+
+@media (hover: none) {
+    .restart:hover {
+      background-color: transparent;
+      color: white;
+    }
+  }

@@ -19,4 +19,11 @@
     .answer {
       width: 200px;
     }
+}
+
+@media (hover: none) {
+  .answer:hover {
+    background-color: transparent;
+    color: white;
   }
+}
