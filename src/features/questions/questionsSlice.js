@@ -7,7 +7,8 @@ const initialState = {
   currentQuestion: 0,
   numberOfCorrectAnswers: 0,
   numberOfAttemptedQuestions: 0,
-  isQuizCompleted: false
+  isQuizCompleted: false,
+  totalQuestions: questionsList.length
 }
 
 export const questionsSlice = createSlice({

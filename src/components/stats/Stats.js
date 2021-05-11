@@ -1,10 +1,16 @@
+import { current } from 'immer'
 import React from 'react'
+import { useSelector } from 'react-redux'
+
 import './stats.css'
 
 const Stats = () => {
+
+    const { totalQuestions, currentQuestion } = useSelector(state => state.questions)
+
     return (
         <div className='stats'>
-            1 of 20
+            {currentQuestion + 1} of {totalQuestions}
         </div>
     )
 }
